@@ -1,0 +1,30 @@
+{
+  "name": "{{ namespace? }}@{{ namespace }}/{{ end }}{{ name }}",
+  "version": "{{ version }}",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "main": "lib/index.js",
+  "license": "{{ mit_license? }}MIT{{ else }}{{ license }}{{ end }}",
+  "repository": "https://github.com/{{ owner }}/{{ name }}.git",
+  "homepage": "https://github.com/{{ owner }}/{{ name }}",
+  "bugs": "https://github.com/{{ owner }}/{{ name }}/issues",
+  "files": [
+    "lib/"
+  ],
+  "bin": "{{ if bin? }}lib/bin.js{{ end }}",
+  "scripts": {
+    "precompile-lib": "rm -rf lib/ && mkdir -p lib/",
+    "compile-lib": "babel -d lib/ src/",
+    "prepublish": "npm run test && npm run compile-lib",
+    "test": "npm run compile-lib && babel-node test/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "6.5.2",
+    "babel-cli": "6.6.5",
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-stage-0": "6.5.0",
+    "pegjs": "0.9.0",
+    "tape": "4.5.1"
+  }
+}
