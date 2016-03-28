@@ -10,12 +10,13 @@
   "bugs": "https://github.com/{% owner %}/{% name %}/issues",
   "files": [
     "lib/"
-  ],
+  ],{% private? %}
+  "private": true,{% end %}
   "scripts": {
-    "precompile-lib": "rm -rf lib/ && mkdir -p lib/",
-    "compile-lib": "babel -d lib/ src/",
-    "prepublish": "npm run test && npm run compile-lib",
-    "test": "npm run compile-lib && babel-node test/index.js"
+    "prebuild": "rm -rf lib/ && mkdir -p lib/",
+    "build": "babel -d lib/ src/",
+    "prepublish": "npm run test && npm run build",
+    "test": "npm run build && babel-node test/index.js"
   },
   "dependencies": {},
   "devDependencies": {
