@@ -1,17 +1,16 @@
 {
-  "name": "{{ namespace? }}@{{ namespace }}/{{ end }}{{ name }}",
-  "version": "{{ version }}",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
+  "name": "{% name %}",
+  "version": "0.0.0",
+  "description": "{% description %}",
+  "author": "{% author %}",
   "main": "lib/index.js",
-  "license": "{{ mit_license? }}MIT{{ else }}{{ license }}{{ end }}",
-  "repository": "https://github.com/{{ owner }}/{{ name }}.git",
-  "homepage": "https://github.com/{{ owner }}/{{ name }}",
-  "bugs": "https://github.com/{{ owner }}/{{ name }}/issues",
+  "license": "MIT",
+  "repository": "https://github.com/{% owner %}/{% name %}.git",
+  "homepage": "https://github.com/{% owner %}/{% name %}",
+  "bugs": "https://github.com/{% owner %}/{% name %}/issues",
   "files": [
     "lib/"
   ],
-  "bin": "{{ if bin? }}lib/bin.js{{ end }}",
   "scripts": {
     "precompile-lib": "rm -rf lib/ && mkdir -p lib/",
     "compile-lib": "babel -d lib/ src/",
