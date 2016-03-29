@@ -1,6 +1,6 @@
 import test from 'tape';
 
-import something from '../src/something';
+import something from '../something.js';
 
 
 test('something', t => {

@@ -17,7 +17,7 @@
     "prebuild": "npm run clean",
     "build": "babel -d lib/ src/",
     "preversion": "npm run test && npm run build",
-    "test": "npm run build && babel-node test/index.js"
+    "test": "npm run build && node lib/test/index.js"
   },
   "dependencies": {},
   "devDependencies": {
