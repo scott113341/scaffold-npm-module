@@ -27,7 +27,6 @@
     "babel-preset-stage-0": "6.5.0",
     "mkdirp": "0.5.1",
     "rimraf": "2.5.2",
-    "pegjs": "0.9.0",
     "tape": "4.5.1"
   }
 }
