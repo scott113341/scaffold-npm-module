@@ -14,10 +14,10 @@
   "private": true,{% end %}
   "scripts": {
     "clean": "rimraf lib/ && mkdirp lib/",
-    "precompile": "npm run clean",
-    "compile": "babel -d lib/ src/",
-    "preversion": "npm run test && npm run compile",
-    "test": "npm run compile && babel-node test/index.js"
+    "prebuild": "npm run clean",
+    "build": "babel -d lib/ src/",
+    "preversion": "npm run test && npm run build",
+    "test": "npm run build && babel-node test/index.js"
   },
   "dependencies": {},
   "devDependencies": {
