@@ -13,9 +13,9 @@
   ],{% private? %}
   "private": true,{% end %}
   "scripts": {
-    "clean": "rm -rf lib/ && mkdir lib/",
+    "clean": "rm -r -f lib/ && mkdir lib/",
     "prebuild": "npm run clean",
-    "build": "babel -d lib/ src/",
+    "build": "babel --out-dir lib/ src/",
     "preversion": "npm run test && npm run build",
     "test": "npm run build && node lib/test/index.js"
   },
