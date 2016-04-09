@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rm -r -f lib/ && mkdir lib/",
     "prebuild": "npm run clean",
-    "build": "babel --out-dir lib/ src/",
+    "build": "babel --copy-files --out-dir lib/ src/",
     "preversion": "npm run test && npm run build",
     "test": "npm run build && node lib/test/index.js"
   },
