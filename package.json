@@ -13,7 +13,7 @@
   ],{% public? %}{% else %}
   "private": true,{% end %}
   "scripts": {
-    "clean": "shx rm -r -f lib/ && shx mkdir lib/",
+    "clean": "shx rm -rf lib/ && shx mkdir lib/",
     "prebuild": "npm run clean",
     "build": "babel --copy-files --out-dir lib/ src/",
     "preversion": "npm run test && npm run build",
