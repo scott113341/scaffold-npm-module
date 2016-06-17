@@ -12,11 +12,11 @@
 [npm-version-badge]: https://img.shields.io/npm/v/{% name %}.svg?style=flat-square
 [npm-version-href]: https://www.npmjs.com/package/{% name %}
 
-[build-status-badge]: https://img.shields.io/travis/{% owner %}/{% name %}.svg?style=flat-square
+[build-status-badge]: https://img.shields.io/travis/{% owner %}/{% name %}/master.svg?style=flat-square
 [build-status-href]: https://travis-ci.org/{% owner %}/{% name %}
 
-[dependencies-badge]: https://img.shields.io/david/{% owner %}/{% name %}.svg?style=flat-square
-[dependencies-href]: https://david-dm.org/{% owner %}/{% name %}#info=dependencies
+[dependencies-badge]: https://img.shields.io/david/{% owner %}/{% name %}/master.svg?style=flat-square
+[dependencies-href]: https://david-dm.org/{% owner %}/{% name %}/master#info=dependencies
 
-[dev-dependencies-badge]: https://img.shields.io/david/dev/{% owner %}/{% name %}.svg?style=flat-square
-[dev-dependencies-href]: https://david-dm.org/{% owner %}/{% name %}#info=devDependencies
+[dev-dependencies-badge]: https://img.shields.io/david/dev/{% owner %}/{% name %}/master.svg?style=flat-square
+[dev-dependencies-href]: https://david-dm.org/{% owner %}/{% name %}/master#info=devDependencies
