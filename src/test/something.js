@@ -1,6 +1,6 @@
-import test from 'tape';
+const test = require('tape');
 
-import something from '../something.js';
+const something = require('../something.js');
 
 
 test('something', t => {

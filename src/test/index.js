@@ -1,1 +1,1 @@
-import something from './something.js';
+const something = require('./something.js');
