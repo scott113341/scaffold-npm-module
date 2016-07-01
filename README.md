@@ -13,7 +13,7 @@
 [npm-version-href]: https://www.npmjs.com/package/{% name %}
 
 [build-status-badge]: https://img.shields.io/travis/{% owner %}/{% name %}/master.svg?style=flat-square
-[build-status-href]: https://travis-ci.org/{% owner %}/{% name %}
+[build-status-href]: https://travis-ci.org/{% owner %}/{% name %}/branches
 
 [dependencies-badge]: https://img.shields.io/david/{% owner %}/{% name %}/master.svg?style=flat-square
 [dependencies-href]: https://david-dm.org/{% owner %}/{% name %}/master#info=dependencies
