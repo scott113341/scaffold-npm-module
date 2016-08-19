@@ -7,6 +7,7 @@
   "repository": "git@github.com:{% owner %}/{% name %}.git",
   "homepage": "https://github.com/{% owner %}/{% name %}",
   "bugs": "https://github.com/{% owner %}/{% name %}/issues",
+  "keywords": [],
   "main": "lib/index.js",
   "files": [
     "lib/"
