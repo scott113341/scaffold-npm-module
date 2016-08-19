@@ -11,7 +11,10 @@
   "main": "lib/index.js",
   "files": [
     "lib/"
-  ],{% public? %}{% else %}
+  ],{% bin? %}
+  "bin": {
+    "{% name %}": "lib/index.js"
+  },{% end %}{% public? %}{% else %}
   "private": true,{% end %}
   "scripts": {
     "clean": "shx rm -rf lib/ && shx mkdir lib/",
