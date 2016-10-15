@@ -1,1 +1,1 @@
-require('./something.js');
+import './something.js';

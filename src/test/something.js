@@ -1,7 +1,6 @@
-const test = require('tape');
+import test from 'tape';
 
-const something = require('../something.js');
-
+import something from '../something.js';
 
 test('something', t => {
   t.equal(something(), 'something');
