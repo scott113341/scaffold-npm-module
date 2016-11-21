@@ -8,9 +8,11 @@
 
 {% description %}
 
+`npm install {% scoped? %}{% scope %}/{% end %}{% name %}`
 
-[npm-version-badge]: https://img.shields.io/npm/v/{% name %}.svg?style=flat-square
-[npm-version-href]: https://www.npmjs.com/package/{% name %}
+
+[npm-version-badge]: https://img.shields.io/npm/v/{% scoped? %}{% scope %}/{% end %}{% name %}.svg?style=flat-square
+[npm-version-href]: https://www.npmjs.com/package/{% scoped? %}{% scope %}/{% end %}{% name %}
 
 [build-status-badge]: https://img.shields.io/travis/{% owner %}/{% name %}/master.svg?style=flat-square
 [build-status-href]: https://travis-ci.org/{% owner %}/{% name %}/branches
