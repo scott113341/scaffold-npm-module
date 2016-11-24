@@ -10,21 +10,20 @@
   "keywords": [],
   "main": "lib/index.js",
   "files": [
-    "lib/"
+    "lib/",
+    "src/"
   ],{% bin? %}
   "bin": {
     "{% name %}": "lib/index.js"
   },{% end %}{% public? %}{% else %}
   "private": true,{% end %}
   "scripts": {
-    "build": "shx rm -rf lib/ && shx mkdir lib/ && babel --copy-files --out-dir lib/ src/",
+    "build": "shx rm -rf lib/ && shx mkdir lib/ && babel --copy-files --source-maps --out-dir lib/ src/",
     "lint": "semistandard --fix",
     "test": "npm run build && node lib/test/index.js",
     "test:ci": "node lib/test/index.js && semistandard"
   },
-  "dependencies": {
-    "bluebird": "3.4.6"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-transform-async-to-generator": "^6.16.0",
@@ -33,6 +32,7 @@
     "np": "^2.10.0",
     "semistandard": "^9.1.0",
     "shx": "^0.2.0",
+    "source-map-support": "^0.4.6",
     "tape": "^4.6.2"
   },
   "semistandard": {
