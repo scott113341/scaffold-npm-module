@@ -20,19 +20,22 @@
   "scripts": {
     "build": "shx rm -rf lib/ && shx mkdir lib/ && babel --copy-files --source-maps --out-dir lib/ src/",
     "lint": "semistandard --fix",
+    "postinstall": "postinstall-build lib/ \"npm run build\"",
     "test": "npm run build && node lib/test/index.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "postinstall-build": "2.1.3"
+  },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-plugin-transform-async-to-generator": "^6.16.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-stage-0": "^6.16.0",
-    "np": "^2.10.0",
-    "semistandard": "^9.1.0",
-    "shx": "^0.2.0",
-    "source-map-support": "^0.4.6",
-    "tape": "^4.6.2"
+    "babel-cli": "6.18.0",
+    "babel-plugin-transform-async-to-generator": "6.16.0",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-stage-0": "6.16.0",
+    "np": "2.10.0",
+    "semistandard": "9.1.0",
+    "shx": "0.2.0",
+    "source-map-support": "0.4.6",
+    "tape": "4.6.2"
   },
   "semistandard": {
     "ignore": [
