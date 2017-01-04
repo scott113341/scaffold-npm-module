@@ -1,5 +1,5 @@
 {
-  "name": "{% scoped? %}{% scope %}/{% end %}{% name %}",
+  "name": "{% scoped? %}@{% scope %}/{% end %}{% name %}",
   "version": "0.0.0",
   "description": "{% description %}",
   "author": "{% author %}",
