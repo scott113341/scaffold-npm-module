@@ -1,6 +1,6 @@
-import test from 'tape';
+const test = ('tape');
 
-import something from '../something.js';
+const something = ('../something.js');
 
 test('something', t => {
   t.equal(something(), 'something');
