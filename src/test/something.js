@@ -1,6 +1,6 @@
-const test = ('tape');
+const test = require('tape');
 
-const something = ('../something.js');
+const something = require('../something.js');
 
 test('something', t => {
   t.equal(something(), 'something');
